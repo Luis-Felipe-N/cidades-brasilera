@@ -1,0 +1,23 @@
+header {
+    grid-column: 3 / 5;
+    margin: 2rem 0;
+    background-color: #ffbb55;
+}
+
+
+.menu ul {
+    display: flex;
+    padding: .625rem;
+}
+
+.menu a {
+    display: block;
+    color: #222222;
+    padding: .925rem;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .875rem;
+    letter-spacing: .1rem;
+}

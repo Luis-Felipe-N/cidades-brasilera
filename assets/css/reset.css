@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-color: #f6faed;
+    color: #222222;
+    display: grid;
+    grid-template-columns: 1fr 7.5rem minmax(18.5rem, 50rem) 1fr;
+}

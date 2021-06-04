@@ -1,0 +1,22 @@
+.mapa {
+    grid-column: 2 / 4;
+    margin-bottom: 2rem;
+}
+
+.dados {
+    grid-column: 2 / 4;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.dados li {
+    margin-bottom: .8rem;
+}
+
+.dados li::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: .625rem;
+    margin-right: .625rem;
+    background: #ffbb55;
+}

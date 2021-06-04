@@ -1,0 +1,27 @@
+.title {
+    grid-column: 1 / 4;
+    font-family: 'Playfair Display SC', serif;
+    font-size: min(10vw, 6rem);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .625rem;
+    display: grid;
+    grid-template-columns: 5.625rem 18.75rem 1fr;
+}
+
+.js .animaSection {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: .2s;
+}
+
+.js .animaSection.active {
+    opacity: 1;
+    transform: translateX(0);
+}

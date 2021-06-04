@@ -1,0 +1,56 @@
+.cidades h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: .1em;
+    color: #e54;
+}
+
+.cidades h2::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: .625rem;
+    margin-right: .625rem;
+    background: #ffbb55;
+}
+
+.cidades p {
+    line-height: 1.2;
+    margin: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.cidades-lista {
+    grid-column: 2;
+    height: 23.43rem;
+    overflow-y: auto;
+}
+
+
+.cidades-lista li {
+    cursor: pointer;
+}
+
+.cidades-lista::-webkit-scrollbar {
+    width: 1.125rem;
+}
+.cidades-lista::-webkit-scrollbar-thumb {
+    background-color: #ffbb55;
+    border: .125rem solid #f6faed;
+    border-radius: .8rem;
+}
+
+.cidades-lista::-webkit-scrollbar-track {
+    background-color: #f6faed;
+}
+
+.js .cidades section {
+    display: none;
+    margin-bottom: 4rem;
+}
+
+.cidades section.active {
+    display: block;
+    animation: animaLeft .5s ;
+}

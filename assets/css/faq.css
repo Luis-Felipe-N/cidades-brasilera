@@ -1,0 +1,43 @@
+.faq-lista {
+    grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #e54;
+    font-weight: 700;
+    margin: 2rem 0 .5rem 0;
+    cursor: pointer;
+}
+
+.faq-lista dt::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: .625rem;
+    margin-right: .625rem;
+    background: #ffbb55;
+}
+
+.faq-lista dt::after {
+    content: '▼';
+    margin-left: 5px;
+}
+
+.faq-lista dt.active::after {
+    content: 'ᐃ';
+    margin-left: 5px;
+}
+
+.faq-lista dd {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0 0 1.87rem .5rem;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-lista dd.active {
+    display: block;
+    animation: slideDown .5s forwards;
+
+}

@@ -1,0 +1,7 @@
+.copy {
+    grid-column: 3 / 5;
+    background-color: #ffbb55;
+    padding: 1.25rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+}
