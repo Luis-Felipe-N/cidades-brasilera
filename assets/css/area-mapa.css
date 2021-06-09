@@ -3,6 +3,10 @@
     margin-bottom: 2rem;
 }
 
+/* .mapa img {
+    width: 100%;
+} */
+
 .dados {
     grid-column: 2 / 4;
     font-family: 'Helvetica', sans-serif;

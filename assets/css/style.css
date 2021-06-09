@@ -6,6 +6,7 @@
 @import 'cidades.css';
 @import 'faq.css';
 @import 'footer.css';
+@import 'area-mapa.css';
 
 
 @media (max-width: 700px) {
