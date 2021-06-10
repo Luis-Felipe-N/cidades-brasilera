@@ -3,7 +3,7 @@
 }
 
 .faq-lista dt {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     color: #e54;
     font-weight: 700;
     margin: 2rem 0 .5rem 0;

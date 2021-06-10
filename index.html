@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+
     <script>document.documentElement.className += ' js'</script>
     <title>Cidades Brasileiras</title>
 </head>
@@ -16,6 +20,7 @@
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#contatos">Contatos</a></li>
                 <li><a href="https://luis-felipe.netlify.app/" target="_blank" rel="noopener noreferrer">Portifólio</a></li>
+                <button class="btn-login" data-btn="btn-modal">Login</button>
             </ul>
         </nav>
     </header>
@@ -62,7 +67,7 @@
                 <p>Manaus localizada na região Norte do Brasil e capital do Amazonas, o maior Estado brasileiro, com uma área de 11.401 km² e de clima equatorial é considerada o portão de entrada para a maior reserva ecológica do planeta: a Floresta Amazônica. O nome "Manaus" é originado da tribo Manaós, que habitava a região. Seu nome significa "Mãe de Deus".</p>
             </section>
             <section data-anime="show-down">
-                <h2>Baiha</h2>
+                <h2>Bahia</h2>
                 <p>Os jesuítas vieram a fundar a cidade de São Paulo em 1554 e sua força projetou-se na cultura e economia.É o motor do Brasil pela sua pujança, procurada por todos os tipos de pessoas para ali tentar sua sorte, propicia grandes facilidades de negócios, intercâmbios, </p> <p>cultura, e é o principal portão de entrada de visitantes estrangeiros, por via aérea.</p> <p> Não é à toa que hoje, as coisas aconteçam primeiro nesta cidade.</p> <p>Olhando pelo lado do Mercosul, favorece o turismo, negócios, eventos e está facilmente ligada às principais capitais do mundo.</p>
             </section>
         </div>
@@ -110,15 +115,18 @@
 
     <!-- Modal -->
 
-    <!-- <section class="modal">
-        <div data-modal="container">
-            <button class="modal__btn">X</button>
+    <section data-modal="modal-container" class="modal-container center">
+        <div data-modal="modal" class="modal">
+            <button data-btn="btn-close" class="modal__btn">X</button>
             <form action="">
                 <label for="modal-email">Email</label>
                 <input type="email" id="modal-email">
+                <label for="modal-senha">Senha</label>
+                <input type="senha" id="modal-senha">
+                <button class="modal__btn-enviar" type="submit">Enviar</button>
             </form>
         </div>
-    </section> -->
+    </section>
 
     <!-- JS -->
     

@@ -1,0 +1,88 @@
+.modal-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 2.5rem;
+    /* display: flex;
+    flex-direction: column; */
+    border: 10px solid #fb5;
+    box-shadow: 0 0 0 10px #fff;
+    position: relative;
+}
+
+.active .modal {
+    animation: animeModal .2s;
+}
+
+@keyframes animeModal {
+    from {
+        opacity: 0;
+        transform: scale(.9);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal__btn {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+    background-color: #e54;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.modal label {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 1rem 0 .5rem 0;
+    font-weight: bold;
+    display: block;
+}
+
+.modal input {
+    max-width: 300px;
+    width: 100%;
+    height: 30px;
+    border: 2px solid rgba(0,0,0, .2);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.modal__btn-enviar {
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 1rem;
+    padding: .7rem 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+    background-color: #e54;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    border: none;
+    transition: .2s;
+}
+
+.modal__btn-enviar:hover {
+    background-color: rgb(231, 52, 33);
+}

@@ -15,9 +15,27 @@ header {
     color: #222222;
     padding: .925rem;
     text-decoration: none;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
     text-transform: uppercase;
     font-size: .875rem;
     letter-spacing: .1rem;
+}
+
+.btn-login {
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    padding: .5rem 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0, .3);
+    background-color: #e54;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    border: none;
+    transition: .2s;
+}
+
+.btn-login:hover {
+    background-color: rgb(231, 52, 33);
 }
