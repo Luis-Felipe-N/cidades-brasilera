@@ -45,6 +45,10 @@
     background-color: #f6faed;
 }
 
+.cidades-descricao {
+    margin-left: 1rem;
+}
+
 .js .cidades section {
     display: none;
     margin-bottom: 4rem;
@@ -52,5 +56,33 @@
 
 .cidades section.active {
     display: block;
+}
+
+.cidades section.show-down {
     animation: animaLeft .5s ;
+}
+.cidades section.show-rigth {
+    animation: animaDown .5s ;
+}
+
+@keyframes animaRigth {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animaDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
