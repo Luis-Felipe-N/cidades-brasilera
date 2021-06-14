@@ -1,5 +1,7 @@
 function initTooltip() {
     const tooltips = document.querySelectorAll( '[data-tooltip]')
+    const eventsOut = [ 'mouseout', 'touchend' ]
+    const eventMove = [ 'mousemove', 'touchmove' ]
 
     const criarTooltip = ( element ) => {
         const text = element.getAttribute('aria-label')
@@ -15,11 +17,12 @@ function initTooltip() {
         const tooltip = criarTooltip( this )
         tooltip
         
-        this.addEventListener('mouseout', onMouseOut)
+        eventsOut.forEach( userEvent => this.addEventListener( userEvent, onMouseOut) )
+        
         onMouseOut.tooltip = tooltip
         onMouseOut.element = this
 
-        this.addEventListener( 'mousemove', onMouseMove )
+        eventMove.forEach( userEvent => this.addEventListener( userEvent, onMouseMove) )
         onMouseMove.tooltip = tooltip
     }
 
@@ -28,6 +31,8 @@ function initTooltip() {
             this.tooltip.remove()
             this.element.removeEventListener('mouseout', onMouseOut)
             this.element.removeEventListener( 'mousemove', onMouseMove )
+            eventsOut.forEach( userEvent => this.element.removeEventListener( userEvent, onMouseOut) )
+            eventMove.forEach( userEvent => this.element.removeEventListener( userEvent, onMouseMove) )
         }
     }
 
