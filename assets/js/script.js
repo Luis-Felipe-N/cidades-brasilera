@@ -5,6 +5,7 @@ import initTab from '/assets/js/modules/tabnav.js'
 import initModal from '/assets/js/modules/modal.js'
 import initTooltip from '/assets/js/modules/tooltip.js'
 import initDropDown from '/assets/js/modules/dropdown.js'
+import initMenuMobile from '/assets/js/modules/menu-mobile.js'
 
 initAccordion()
 initAnimaScroll()
@@ -13,3 +14,4 @@ initTab()
 initModal()
 initTooltip()
 initDropDown()
+initMenuMobile()
